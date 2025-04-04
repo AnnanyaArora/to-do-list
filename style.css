@@ -1,0 +1,75 @@
+body{
+    font-family: Arial;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+input {
+    border: 1px solid #ccc; /* Default border */
+    outline: none; /* Prevents blue highlight in some browsers */
+    transition: all 0.2s ease-in-out; /* Smooth effect */
+}
+
+input:focus {
+    border: 1px solid #007BFF; /* Border color change on focus */
+}
+.box {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px; /* Add some padding inside the box */
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .js-checkbox{
+    height: 18px;
+    width: 18px;
+  }
+.todo-grid,
+.todo-list-style{
+    display: grid;
+    grid-template-columns:  25px 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+.todo-list-style{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+.due-date-input,
+.name-input{
+    font-size: 15px;
+    padding: 6px;
+}
+.add-todo-button,
+.delete-todo-button {
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 15px; /* Equal padding for height & width */
+    border: none;
+    border-radius: 5px; /* Optional: Smooth edges */
+    display: inline-block; /* Ensures proper alignment */
+    text-align: center;
+}
+
+.add-todo-button {
+    background-color: green;
+}
+
+.delete-todo-button {
+    background-color: red;
+}
+.popper-effect {
+    position: absolute;
+    font-size: 30px;
+    animation: popperAnimation 1s ease-out;
+}
+
+@keyframes popperAnimation {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-30px) scale(1.2); }
+    100% { transform: translateY(-50px) scale(0); opacity: 0; }
+}
+
